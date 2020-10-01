@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template</title>
+	<link rel="stylesheet" type="text/css" href="template.css">
+	<script type="text/javascript">
+		function reg()
+		{
+			var x=document.getElementById('login')
+			x.style.display="none";
+			var y=document.getElementById('register')
+			y.style.display="block";
+		}
+		function log()
+		{
+			var y=document.getElementById('register')
+			y.style.display="none";
+			var x=document.getElementById('login')
+			x.style.display="block";
+		}		
+	</script>
+</head>
+<body>
+	<div class="main">
+		<div class="header">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">Faculty</a></li>
+			</ul>
+		</div><br/>
+		<div class="mainbox">
+			<button class="logbtn" onclick="log()" type="button">Login</button>
+			<button class="regbtn" onclick="reg()" type="button">Register</button>
+			<div id="login">
+				<form id="login">
+					<label class="Label" for="Id">User Id</label>
+					<input class="Input" type="text" id="Id" placeholder="Username or Email Id"><br/>
+					<label class="Label" for="pass">Password</label>
+					<input class="Input" type="Password" id="pass" placeholder="Password"><br/>
+					<button class="submit">Login</button>
+				</form>
+			</div>
+			<div id="register" style="display: none;">
+				<form>
+					<label class="Label" for="name">Name</label>
+					<input class="Input" type="text" id="name" placeholder="Enter Name"><br/>
+					<label class="Label" class="Label" for="email">Email Id</label>
+					<input class="Input" type="Email" id="email" placeholder="Enter Email-Id"><br/>
+					<label class="Label" for="ph">Phone Number</label>
+					<input class="Input" type="text" id="ph" placeholder="Enter Phone Number"><br/>
+					<label class="Label" for="pass">Password</label>
+					<input class="Input" type="Password" id="pass" placeholder="Enter Password"><br/>
+					<label class="Label" for="cpass">Confirm-Password</label>
+					<input class="Input" type="Password" id="cpass" placeholder="Confirm Password"><br/>
+					<button  class="submit">Register</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
